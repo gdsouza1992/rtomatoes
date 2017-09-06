@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title><%- movie.attributes.title %></title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+   </head>
+   <body onresize="onBodyResize()">
+      <div class="container">
+         <%- include('./common/_header') %>
+         <section class="movieDetails fl boxSizing">
+            <h1 class='movieTitle uppercase sm-show'><%- movie.attributes.title %></h1>
+            <div class="moviePoster fl boxSizing">
+               <img src="<%- movie.relationships.images.links.related %>" alt="dunkirk_poster">
+            </div>
+            <div class="movieScorePanel fl boxSizing">
+               <div class="tomatometerPanel fl boxSizing">
+                  <div>
+                     <h3>TOMATOMETER</h3>
+                  </div>
+                  <div>
+                     <div class="scoreSubPanel fl">
+                        <div class="icon big certified fl"></div>
+                        <h2 class="fl"><%- movie.attributes.tomatometer.value %>%</h2>
+                        <ul class="fl sm-hidden content">
+                           <li>
+                              <span class="label">Average Rating:</span> <%- movie.attributes.tomatometer.averageRating %>/10
+                           </li>
+                           <li>
+                              <span class="label">Reviews Counted:</span> <%- movie.attributes.tomatometer.reviewCount %>
+                              <ul>
+                                 <li><span class="label">Fresh:</span> <%- movie.attributes.tomatometer.freshCount %></li>
+                                 <li><span class="label">Rotten:</span> <%- movie.attributes.tomatometer.rottenCount %></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="scoreSubPanel fl">
+                        <div class="progress sm-hidden">
+                           <div class="progress-bar fl" style="width:<%- movie.attributes.tomatometer.value %>%;"></div>
+                        </div>
+                        <p class="sm-hidden content">
+                           Critics Consensus:
+                           <%- movie.attributes.consensus %>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="audienceScorePanel fl boxSizing">
+                  <div>
+                     <h3>AUDIENCE SCORE</h3>
+                  </div>
+                  <div>
+                     <div class="fl">
+                        <div class="icon big popcorn fl"></div>
+                        <div class="fl">
+                           <h2><%- movie.attributes.audience.value %>%</h2>
+                           <h4 class="sm-hidden">liked it</h4>
+                        </div>
+                        <ul class="fl sm-hidden content">
+                           <li>
+                              <span class="label">Average Rating:</span> <%- movie.attributes.audience.averageRating %>/5
+                           </li>
+                           <li>
+                              <span class="label">User Ratings:</span> <%- movie.attributes.audience.ratingsCount %>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="sm-show fl">
+                  <p>
+                     <span class="label">Critics Consensus:</span>
+                     <%- movie.attributes.consensus %>
+                  </p>
+               </div>
+            </div>
+         </section>
+         <%- include('./common/_carousel', movie) %>
+      </div>
+   </body>
+</html>

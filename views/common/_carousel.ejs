@@ -1,0 +1,30 @@
+<section class="movieCarousel fl">
+	<div>
+		<h4 class="panelHeading">NEWS & INTERVIEWS FOR DUNKIRK</h4>
+	</div>
+	<div id="slider-window-holder" class="slider-holder fl">
+		<div id="slider-image-holder" class="image-holder" data-sliderLength="<%-articles.length%>" data-sliderCurrentWindow="0">
+			<% articles.forEach(function(article) { %>
+				<div class="slider-image fl">
+					<img src="<%-article.featured_image.source%>">
+					<div><%-article.title%></div>
+				</div>                        
+			<% }); %>
+		</div>
+	</div>
+	
+	<div class="slider-buttons">
+		<div id="slider-button-left" class="fl">
+			<div><</div>
+		</div>
+
+		<div id="slider-button-right" class="fr">
+			<div>></div>
+		</div>
+	</div>
+	
+	<div class="more fr">
+	All <span><%- movie.attributes.title %></span> News (6)
+	</div>
+</section>
+<script type="text/javascript" src="/js/carousel.js"></script>

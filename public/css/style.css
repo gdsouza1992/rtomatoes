@@ -1,0 +1,296 @@
+body {
+    color: #333;
+    background-color: #EEE;
+    margin: 0px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+ul ul {
+    padding-left: 10px;
+}
+section {
+    background-color: #FFF;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+    `
+}
+h2 {
+    font-size: 23px;
+}
+h3 {
+    font-size: 14px;
+    color: #787878;
+}
+h4 {
+    font-size: 12px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.content {
+    font-size: 12px;
+}
+.label {
+    color: #787878;
+}
+.boxSizing {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.container {
+    width: 770px;
+    margin: 0 auto;
+}
+.logoBar {
+    height: 86px;
+    background-color: #369619;
+    border-bottom: 2px #FFF solid;
+}
+.logoBar #tomatoCorner {
+    position: absolute;
+    height: inherit;
+}
+.logoBar #rtLogo {
+    position: absolute;
+    height: 50px;
+    padding: 21px 0px 10px 26px;
+}
+.blackBar {
+    height: 20px;
+    background-color: #000;
+}
+.movieDetails {
+    width: inherit;
+    padding: 10px 20px;
+}
+.moviePoster {
+    width: 29%;
+    margin-right: 1%;
+}
+.moviePoster img {
+    width: 100%;
+    height: auto;
+}
+.movieScorePanel {
+    width: 70%;
+    background-color: #fef7cb;
+}
+.movieScorePanel>div {
+    padding: 10px;
+}
+.tomatometerPanel {
+    width: 67%;
+    border-right: 1px solid grey;
+}
+.scoreSubPanel {
+    width: 50%;
+}
+.more span {
+    font-style: italic;
+}
+
+.progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #ECE4B5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #C91B22;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+.audienceScorePanel {
+    width: 33%;
+}
+.panelHeading {
+    background-color: #FDEE00;
+    clear: left;
+    color: #1C1C1C;
+    float: left;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.movieCarousel {
+    width: inherit;
+    padding-bottom: 10px;
+}
+.more {
+    margin-right: 10px;
+}
+.slider-holder {
+    width: inherit;
+    height: 153px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.image-holder {
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slider-image {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 170px;
+    padding: 0px 9px;
+}
+.slider-image img {
+    height: 88px;
+    width: inherit;
+}
+.image-holder {
+    left: 0px;
+    padding: 0px 10px;
+}
+.button-holder {
+    position: relative;
+    top: -20px;
+}
+.slider-change {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: brown;
+}
+.slider-buttons {
+    position: relative;
+    top: -125px;
+}
+.slider-buttons>div {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+}
+.slider-buttons>div>div {
+    margin-top: 5px;
+}
+/*ICONS*/
+
+.icon.big.fresh {
+    background-position: -192px -48px;
+}
+.icon.big.rotten {
+    background-position: -240px -96px;
+}
+.icon.big.certified {
+    background-position: -192px -96px;
+}
+.icon.big.popcorn {
+    background-position: -239px -48px;
+}
+.icon.big.spilled {
+    background-position: -192px 0;
+}
+.icon.big.wts {
+    background-position: -240px 0;
+}
+.icon.big {
+    height: 48px;
+    width: 48px;
+}
+.icon {
+    background: transparent url(/images/icons-v2.png) no-repeat -312px -160px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.sm-show {
+    display: none;
+}
+.movieTitle {
+    padding: 8px 0px;
+}
+@media only screen and (max-width: 770px) {
+    h1 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 11px;
+    }
+    .container {
+        width: 100%;
+    }
+    .movieDetails {
+        padding: 0px 10px;
+    }
+    .moviePoster {
+        width: 30%;
+        margin-right: 0px;
+    }
+    .sm-hidden {
+        display: none;
+    }
+    .sm-show {
+        display: block;
+    }
+    .movieScorePanel {
+        background-color: white;
+        padding: 2px;
+    }
+    .tomatometerPanel {
+        border-right: none;
+    }
+    .slider-holder {
+        overflow: scroll;
+    }
+    .slider-buttons {
+        display: none;
+    }
+    #slider-image-holder {
+        left: 0px!important;
+    }
+    .scoreSubPanel {
+        width: 100%;
+    }
+    .tomatometerPanel {
+        width: 50%;
+    }
+    .audienceScorePanel {
+        width: 50%;
+    }
+    #tomatoCorner {
+        display: none;
+    }
+}
